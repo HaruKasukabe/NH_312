@@ -1,2 +1,0 @@
-Sourcetree及びDiscordの通知機能の確認です。
-再テスト
