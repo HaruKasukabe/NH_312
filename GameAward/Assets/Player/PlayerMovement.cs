@@ -43,12 +43,12 @@ public class PlayerMovement : MonoBehaviour
     {
         //=======プレイヤー操作=============
         float x = Input.GetAxis("Horizontal");
-        if (x==0)
+        if (x == 0)
         {
             //止まる
             moveDirection = MOVE_DIRECTION.STOP;
         }
-        else if(x>0)
+        else if (x > 0)
         {
             //右に移動
             moveDirection = MOVE_DIRECTION.RIGHT;
@@ -71,7 +71,6 @@ public class PlayerMovement : MonoBehaviour
             GameObject g = Instantiate(bullet, transform.position, Quaternion.identity);
             g.GetComponent<Bullet>().getVector(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
-
         Attack();
         //=========================================
     }

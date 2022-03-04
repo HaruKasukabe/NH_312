@@ -17,8 +17,7 @@ public class cubecollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Material[] mats = GetComponent<Renderer>().materials;
-        mats[1].color = Color.blue;
+
     }
 
     // Update is called once per frame

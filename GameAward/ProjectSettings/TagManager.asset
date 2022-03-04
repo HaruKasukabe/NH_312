@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ink
   - cube
+  - Floor
   layers:
   - Default
   - TransparentFX
