@@ -33,6 +33,6 @@ sysinfo.txt
 Release/
 Debug/
 
-# Unity
+#Unity
 Logs/
 *.meta
