@@ -6,11 +6,13 @@ using Effekseer;
 
 public class InkEffect : MonoBehaviour
 {
+    public GameObject prefabObj;
+
     // Start is called before the first frame update
     void Start()
     {
         // エフェクトを取得する。
-        EffekseerEffectAsset effect = Resources.Load<EffekseerEffectAsset>("Laser01");
+        EffekseerEffectAsset effect = Resources.Load<EffekseerEffectAsset>("Ink");
         // transformの位置でエフェクトを再生する
         EffekseerHandle handle = EffekseerSystem.PlayEffect(effect, transform.position);
         // transformの回転を設定する。
@@ -20,9 +22,15 @@ public class InkEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKey(KeyCode.Space))
+
+        if (Input.GetKey(KeyCode.Space))
         {
-           
+            CreateObject();
         }
+    }
+
+    void CreateObject()
+    {
+        GameObject obj = Instantiate(prefabObj, Vector3.zero, Quaternion.identity);
     }
 }
