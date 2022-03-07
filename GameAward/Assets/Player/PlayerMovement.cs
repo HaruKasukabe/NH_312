@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
    
             currentAttackTime = attackTime; //currentAttackTimeにattackTimeをセット。
-        
     }
 
     void Update()
