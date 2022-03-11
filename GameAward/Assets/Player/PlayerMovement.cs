@@ -23,6 +23,11 @@ public class PlayerMovement : MonoBehaviour
 
     public float m_shotAngleRange;    //弾を発射する角度
 
+    public AudioClip jump;
+    public AudioClip walk;
+    AudioSource audioSource;
+    bool bWalkSound;
+
     public enum MOVE_DIRECTION
     {
         STOP,
@@ -36,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
    
             currentAttackTime = attackTime; //currentAttackTimeにattackTimeをセット。
+
+        audioSource = GetComponent<AudioSource>();
+        bWalkSound = false;
     }
 
     void Update()
@@ -46,21 +54,37 @@ public class PlayerMovement : MonoBehaviour
         {
             //止まる
             moveDirection = MOVE_DIRECTION.STOP;
+
+            bWalkSound = false;
         }
         else if (x > 0)
         {
             //右に移動
             moveDirection = MOVE_DIRECTION.RIGHT;
+
+            if (!bWalkSound)
+            {
+                audioSource.PlayOneShot(walk);
+                bWalkSound = true;
+            }
         }
         else if (x<0)
         {
             //左に移動
             moveDirection = MOVE_DIRECTION.LEFT;
+
+            if (!bWalkSound)
+            {
+                audioSource.PlayOneShot(walk);
+                bWalkSound = true;
+            }
         }
         if(Input.GetKeyDown("joystick button 0")|| Input.GetKeyDown("space") && this.jumpCount < 0)
         {
             this.rigidbody2D.AddForce(transform.up * jumpForce);
             jumpCount++;
+
+            audioSource.PlayOneShot(jump);
         }
 
         if (Input.GetMouseButtonDown(0))
