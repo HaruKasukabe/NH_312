@@ -1,16 +1,21 @@
-//using System.Collections;
-//using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Effekseer;
-//using System;
 
-public class InkEffect : MonoBehaviour
+
+public class Ink : MonoBehaviour
 {
-    public GameObject prefabObj;
+    private EffekseerEmitter InkEffect;
+
+    public string objectName;
 
     // Start is called before the first frame update
     void Start()
     {
+        //InkEffect = GameObject.Find("Ink").GetComponent<EffekseerEmitter>();
+        InkEffect = GameObject.Find(objectName).GetComponent<EffekseerEmitter>();
+
         // エフェクトを取得する。
         EffekseerEffectAsset effect = Resources.Load<EffekseerEffectAsset>("Ink");
         // transformの位置でエフェクトを再生する
@@ -22,15 +27,9 @@ public class InkEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKey(KeyCode.Space))
         {
-            CreateObject();
+            InkEffect.Play();
         }
-    }
-
-    void CreateObject()
-    {
-        GameObject obj = Instantiate(prefabObj, Vector3.zero, Quaternion.identity);
     }
 }

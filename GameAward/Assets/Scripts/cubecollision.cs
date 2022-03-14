@@ -9,7 +9,7 @@ public class cubecollision : MonoBehaviour
         if (collision.gameObject.CompareTag("ink"))
         {
             GetComponent<Collider2D>().isTrigger = false;
-            GetComponent<Renderer>().material.color = collision.GetComponent<Renderer>().material.color;
+            GetComponent<Renderer>().material.color = collision.GetComponent<Renderer>().material.color + new Color32(0,0,0,255);
             collision.gameObject.SetActive(false);
         }
     }

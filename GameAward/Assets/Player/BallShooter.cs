@@ -7,15 +7,20 @@ public class BallShooter : MonoBehaviour
     public GameObject ball;
     float speed;
 
+    public AudioClip sound1;
+    AudioSource audioSource;
+
     void Start()
     {
         speed = 30.0f;  // 弾の速度
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0)|| Input.GetKeyDown("joystick button 5"))
+        if (Input.GetMouseButtonDown(0))
         {
 
             // 弾（ゲームオブジェクト）の生成
@@ -29,6 +34,36 @@ public class BallShooter : MonoBehaviour
 
             // 弾に速度を与える
             clone.GetComponent<Rigidbody2D>().velocity = shotForward * speed;
+
+            audioSource.PlayOneShot(sound1);
+        }
+
+        if (Input.GetKeyDown("joystick button 5"))
+        {
+            //audioSource.PlayOneShot(sound1);
+
+            // 弾（ゲームオブジェクト）の生成
+            GameObject clone = Instantiate(ball, transform.position, Quaternion.identity);
+
+            var h = Input.GetAxis("Horizontal2");
+            var v = Input.GetAxis("Vertical2");
+
+            float radian = Mathf.Atan2(v, h) * Mathf.Rad2Deg;
+
+            if (radian < 0)
+            {
+                radian += 360;
+            }
+
+            // 向きの生成（Z成分の除去と正規化）
+            //Vector3 shotForward = Vector3.Scale((mouseWorldPos - transform.position), new Vector3(1, 1, 0)).normalized;
+
+            Vector3 shotForward = new Vector3(h, -v, 0).normalized;
+            Debug.Log(shotForward);
+            // 弾に速度を与える
+            clone.GetComponent<Rigidbody2D>().velocity = shotForward * speed;
+
+            audioSource.PlayOneShot(sound1);
         }
     }
 }

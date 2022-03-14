@@ -23,6 +23,11 @@ public class PlayerMovement : MonoBehaviour
 
     public float m_shotAngleRange;    //弾を発射する角度
 
+    public AudioClip jump;
+    public AudioClip walk;
+    AudioSource audioSource;
+    bool bWalkSound;
+
     public enum MOVE_DIRECTION
     {
         STOP,
@@ -36,7 +41,9 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
    
             currentAttackTime = attackTime; //currentAttackTimeにattackTimeをセット。
-        
+
+        audioSource = GetComponent<AudioSource>();
+        bWalkSound = false;
     }
 
     void Update()
@@ -47,31 +54,47 @@ public class PlayerMovement : MonoBehaviour
         {
             //止まる
             moveDirection = MOVE_DIRECTION.STOP;
+
+            bWalkSound = false;
         }
         else if (x > 0)
         {
             //右に移動
             moveDirection = MOVE_DIRECTION.RIGHT;
+
+            if (!bWalkSound)
+            {
+                audioSource.PlayOneShot(walk);
+                bWalkSound = true;
+            }
         }
         else if (x<0)
         {
             //左に移動
             moveDirection = MOVE_DIRECTION.LEFT;
+
+            if (!bWalkSound)
+            {
+                audioSource.PlayOneShot(walk);
+                bWalkSound = true;
+            }
         }
-        if(Input.GetKeyDown("joystick button 0")|| Input.GetKeyDown("space") && this.jumpCount < 0)
+        if((Input.GetKeyDown("joystick button 1") && this.jumpCount < 0) || (Input.GetKeyDown(KeyCode.Space) && this.jumpCount < 0))
         {
             this.rigidbody2D.AddForce(transform.up * jumpForce);
             jumpCount++;
+
+            audioSource.PlayOneShot(jump);
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            Instantiate(bullet, transform.position, Quaternion.identity);
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Instantiate(bullet, transform.position, Quaternion.identity);
 
-            GameObject g = Instantiate(bullet, transform.position, Quaternion.identity);
-            g.GetComponent<Bullet>().getVector(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        }
-        Attack();
+        //    GameObject g = Instantiate(bullet, transform.position, Quaternion.identity);
+        //    g.GetComponent<Bullet>().getVector(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        //}
+        //Attack();
         //=========================================
     }
 
@@ -79,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Floor"))
         {
-            jumpCount = 0;
+            jumpCount = -1;
         }
     }
 
