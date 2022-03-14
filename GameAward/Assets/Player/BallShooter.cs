@@ -7,9 +7,14 @@ public class BallShooter : MonoBehaviour
     public GameObject ball;
     float speed;
 
+    public AudioClip sound1;
+    AudioSource audioSource;
+
     void Start()
     {
         speed = 30.0f;  // ’e‚Ì‘¬“x
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -29,6 +34,8 @@ public class BallShooter : MonoBehaviour
 
             // ’e‚É‘¬“x‚ð—^‚¦‚é
             clone.GetComponent<Rigidbody2D>().velocity = shotForward * speed;
+
+            audioSource.PlayOneShot(sound1);
         }
     }
 }
