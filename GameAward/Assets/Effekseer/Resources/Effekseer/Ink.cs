@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Effekseer;
 
+
 public class Ink : MonoBehaviour
 {
     private EffekseerEmitter InkEffect;
 
+    public string objectName;
+
     // Start is called before the first frame update
     void Start()
     {
-        InkEffect = GameObject.Find("Ink").GetComponent<EffekseerEmitter>();
+        //InkEffect = GameObject.Find("Ink").GetComponent<EffekseerEmitter>();
+        InkEffect = GameObject.Find(objectName).GetComponent<EffekseerEmitter>();
 
         // エフェクトを取得する。
         EffekseerEffectAsset effect = Resources.Load<EffekseerEffectAsset>("Ink");
