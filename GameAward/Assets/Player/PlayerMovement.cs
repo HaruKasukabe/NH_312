@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
                 bWalkSound = true;
             }
         }
-        if(Input.GetKeyDown("joystick button 0")|| Input.GetKeyDown("space") && this.jumpCount < 0)
+        if((Input.GetKeyDown("joystick button 1") && this.jumpCount < 0) || (Input.GetKeyDown(KeyCode.Space) && this.jumpCount < 0))
         {
             this.rigidbody2D.AddForce(transform.up * jumpForce);
             jumpCount++;
@@ -102,7 +102,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Floor"))
         {
-            jumpCount = 0;
+            jumpCount = -1;
         }
     }
 
