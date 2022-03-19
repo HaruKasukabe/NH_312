@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: ad9e138d2aae8b848ac67e91ed6ec7b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5693110512764887916
+    second: walking_temp_0
+  - first:
+      213: -7527255725406948999
+    second: walking_temp_1
+  - first:
+      213: -5289734398724847731
+    second: walking_temp_2
+  - first:
+      213: 129755086336479096
+    second: walking_temp_3
+  - first:
+      213: -8012615364902593252
+    second: walking_temp_4
+  - first:
+      213: 2138956411997471683
+    second: walking_temp_5
+  - first:
+      213: 6721440887462377934
+    second: walking_temp_6
+  - first:
+      213: 208662086609411817
+    second: walking_temp_7
+  - first:
+      213: -5327785744098991177
+    second: walking_temp_8
+  - first:
+      213: 7558656985759152928
+    second: walking_temp_9
+  - first:
+      213: 3042831430964958764
+    second: walking_temp_10
+  - first:
+      213: 8464074032506018132
+    second: walking_temp_11
+  - first:
+      213: 2750902795021553153
+    second: walking_temp_12
+  - first:
+      213: 4164826150404176505
+    second: walking_temp_13
+  - first:
+      213: -6472609499598203702
+    second: walking_temp_14
+  - first:
+      213: 7913960873142796118
+    second: walking_temp_15
+  - first:
+      213: -14663872547989099
+    second: walking_temp_16
+  - first:
+      213: -6641318744734670671
+    second: walking_temp_17
+  - first:
+      213: -159706061039685272
+    second: walking_temp_18
+  - first:
+      213: -5467997918880816389
+    second: walking_temp_19
+  - first:
+      213: 5133734747133672513
+    second: walking_temp_20
+  - first:
+      213: 640926354199030357
+    second: walking_temp_21
+  - first:
+      213: 854472884507424872
+    second: walking_temp_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walking_temp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1420
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63a46419ddf10f40800000000000000
+      internalID: 5693110512764887916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1420
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971f7918cc0d98790800000000000000
+      internalID: -7527255725406948999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1420
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8747df27961796b0800000000000000
+      internalID: -5289734398724847731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_3
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1420
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fc2e4409bfcc100800000000000000
+      internalID: 129755086336479096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_4
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1420
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1dd42d37c87dc090800000000000000
+      internalID: -8012615364902593252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1065
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3472726891fad10800000000000000
+      internalID: 2138956411997471683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_6
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1065
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec93bfb10ea574d50800000000000000
+      internalID: 6721440887462377934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_7
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1065
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee127eef0155e200800000000000000
+      internalID: 208662086609411817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_8
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1065
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3e693f717ef06b0800000000000000
+      internalID: -5327785744098991177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_9
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1065
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bf2372b7eb5e860800000000000000
+      internalID: 7558656985759152928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 710
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c265f0a901f4a3a20800000000000000
+      internalID: 3042831430964958764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 710
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459112cec7e667570800000000000000
+      internalID: 8464074032506018132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_12
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 710
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e83e4648b2d2620800000000000000
+      internalID: 2750902795021553153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_13
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 710
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a391e415f6cc930800000000000000
+      internalID: 4164826150404176505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_14
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 710
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac451a614fbac26a0800000000000000
+      internalID: -6472609499598203702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 355
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f3402fb7904dd60800000000000000
+      internalID: 7913960873142796118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_16
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 355
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599debd1947ebcff0800000000000000
+      internalID: -14663872547989099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_17
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 355
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b062f3f9cb45d3a0800000000000000
+      internalID: -6641318744734670671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_18
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 355
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861b0430f2c98cdf0800000000000000
+      internalID: -159706061039685272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_19
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 355
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2a88c0dd4cd14b0800000000000000
+      internalID: -5467997918880816389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c7bf58d80be3740800000000000000
+      internalID: 5133734747133672513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_21
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a28359f1705e800800000000000000
+      internalID: 640926354199030357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_temp_22
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868b44faf82bbdb00800000000000000
+      internalID: 854472884507424872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
