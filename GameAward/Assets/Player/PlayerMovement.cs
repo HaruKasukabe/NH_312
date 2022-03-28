@@ -1,3 +1,8 @@
+//==================================================
+// PlayerMovement.cs[ÉvÉåÉCÉÑÅ[ÇÃëÄçÏä÷åW]
+//Author: RYO TOKUDA
+
+//=================================================
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -87,14 +92,14 @@ public class PlayerMovement : MonoBehaviour
             audioSource.PlayOneShot(jump);
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            Instantiate(bullet, transform.position, Quaternion.identity);
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Instantiate(bullet, transform.position, Quaternion.identity);
 
-            GameObject g = Instantiate(bullet, transform.position, Quaternion.identity);
-            g.GetComponent<Bullet>().getVector(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        }
-        Attack();
+        //    GameObject g = Instantiate(bullet, transform.position, Quaternion.identity);
+        //    g.GetComponent<Bullet>().getVector(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        //}
+        //Attack();
         //=========================================
     }
 
