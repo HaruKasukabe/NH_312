@@ -1,3 +1,8 @@
+//==================================================
+// PlayerMovement.cs[ƒvƒŒƒCƒ„[‚Ì‘€ìŠÖŒW]
+//Author: RYO TOKUDA
+
+//=================================================
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
