@@ -1,3 +1,12 @@
+// =========================================================
+//
+// BallLife_false.cs[ボールが画面外または床接地で無効化]
+// Author:HARUTO TAKEI
+// 
+// 更新履歴
+// 2022/03/08:ボールが画面外または床に当たることで軌跡を無効化
+// 
+// =========================================================
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +29,7 @@ public class BallLife_false : MonoBehaviour
             flg = true;
         if(!Line_Renderer.isVisible&&flg)
         {
+
             // オブジェクトが画面から消えた時
             gameObject.SetActive(false);
         }

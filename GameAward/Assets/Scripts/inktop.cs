@@ -37,7 +37,7 @@ public class inktop : MonoBehaviour
         }
         else
         {
-            if (-3 >= pos.y)
+            if (-5 >= pos.y)
                 pos.y += Time.deltaTime * 3;
 
         }

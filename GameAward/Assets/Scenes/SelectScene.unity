@@ -192,8 +192,8 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_Camera: {fileID: 1292671031}
+  m_PlaneDistance: 998
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -284,7 +284,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9b418d5b69844ed43834518e9b333f51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42680fd5639a5684fa0ebf11a058027c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -304,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 123136172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 971, y: 531.6176, z: 0}
-  m_LocalScale: {x: 17.809927, y: 21.035439, z: 1}
+  m_LocalScale: {x: 17.599575, y: 20.786991, z: 0.9881891}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 417523659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1cf34ba5a5731d4ab66d492566660fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 02d755110d594274f878f19b32c2f34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &417523662
@@ -396,7 +396,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 279adf88982061743bb6c38618cb9e59, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc7d88d5d6f6de24283b2cf9b50d65d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -415,7 +415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417523659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 181, y: 124, z: 0}
+  m_LocalPosition: {x: 174, y: 144, z: -97}
   m_LocalScale: {x: 82.96296, y: 66.77264, z: 80.939476}
   m_Children: []
   m_Father: {fileID: 0}
@@ -735,7 +735,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292671029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: -10}
+  m_LocalPosition: {x: 960, y: 540, z: -998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2128766655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f7b696bc8053c54390390aef2f31bb7, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ee7b866e3600e34894d02d3995c5df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2128766658
