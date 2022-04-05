@@ -19,12 +19,12 @@ public class inktop : MonoBehaviour
         Transform inkTop = this.transform;
         Vector3 pos = inkTop.position;
 
-        if (Input.GetKeyDown("joystick button 5") || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown("joystick button 7") || Input.GetMouseButtonDown(0))
         {
             mouseButton = true;
 
         }
-        else if (Input.GetKeyDown("joystick button 5") || Input.GetMouseButtonUp(0))
+        else if (!Input.GetKey("joystick button 7") || Input.GetMouseButtonUp(0))
         {
             mouseButton = false;
         }

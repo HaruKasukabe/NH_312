@@ -9,11 +9,17 @@ using UnityEngine.SceneManagement;
 
 public class StartController : MonoBehaviour
 {
-    public void SwitchScene()
+    public void Tutorial()
     {
         SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
     }
-        void Start()
+
+    public void S1()
+    {
+        SceneManager.LoadScene("S5-1", LoadSceneMode.Single);
+    }
+
+    void Start()
     {
         
     }
