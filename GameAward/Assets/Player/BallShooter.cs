@@ -12,7 +12,7 @@ public class BallShooter : MonoBehaviour
 
     void Start()
     {
-        speed = 30.0f;  // 弾の速度
+        speed = 0.0f;  // 弾の速度
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -20,9 +20,12 @@ public class BallShooter : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-
+            speed += 0.1f;
+        }
+        if(Input.GetMouseButtonUp(0))
+        {
             // 弾（ゲームオブジェクト）の生成
             GameObject clone = Instantiate(ball, transform.position, Quaternion.identity);
 
@@ -36,12 +39,17 @@ public class BallShooter : MonoBehaviour
             clone.GetComponent<Rigidbody2D>().velocity = shotForward * speed;
 
             audioSource.PlayOneShot(sound1);
+
+            speed = 0.0f;
         }
 
-        if (Input.GetKeyDown("joystick button 5"))
-        {
-            //audioSource.PlayOneShot(sound1);
 
+        if (Input.GetKey("joystick button 7"))
+        {
+            speed += 0.1f;
+        }
+        if(Input.GetKeyUp("joystick button 7"))
+        {
             // 弾（ゲームオブジェクト）の生成
             GameObject clone = Instantiate(ball, transform.position, Quaternion.identity);
 
@@ -64,6 +72,8 @@ public class BallShooter : MonoBehaviour
             clone.GetComponent<Rigidbody2D>().velocity = shotForward * speed;
 
             audioSource.PlayOneShot(sound1);
+
+            speed = 0.0f;
         }
     }
 }
