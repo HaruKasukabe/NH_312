@@ -11,7 +11,7 @@ public class inkUIAnimation : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        num = 0;
+        num = 1;
     }
 
     // Update is called once per frame
@@ -19,19 +19,28 @@ public class inkUIAnimation : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-            switch(num)
+           
+
+           if (num > 7) //8
+           {
+               anim.SetBool("ink1", true);
+           }
+           
+            if (num >12 ) //13
             {
-                case 0:
-                    anim.SetBool("ink1", true);
-                    num++;
-                    break;
-                case 1:
-                    anim.SetBool("ink2", true);
-                    num++;
-                    break;
-                default:
-                    break;
+                anim.SetBool("ink2", true);
             }
+
+
+            if (num > 15) //16
+            {
+                anim.SetBool("ink3", true);
+            }
+
+            
+            ++num;
+
+          // anim.SetBool("ink2", true);            
         }
 
         if (Input.GetKeyUp("joystick button 7"))

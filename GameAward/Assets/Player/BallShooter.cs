@@ -1,29 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BallShooter : MonoBehaviour
 {
+    GameObject Fade;
+    Fade script;
+
     public GameObject ball;
     float speed;
+
+    bool attackable = true;
 
     public AudioClip sound1;
     AudioSource audioSource;
 
+    [SerializeField] static string bullet;
+
+
+   public int shotCount = 17; //インクの数
+
     void Start()
     {
-        speed = 0.0f;  // 弾の速度
+        Fade = GameObject.Find("FadePanel");
+        script = Fade.GetComponent<Fade>();
+        
+
+        speed = 0.0f;  // インクの速度
 
         audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
-    {
+    { 
+            if (shotCount < 1)
+            {
+               
+                if(shotCount == 0)
+                {
+                    attackable = false;
+                }
+                Debug.Log("インクが無くなりました");
+            //=リスタート=
+                  SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            script.isFadeout = true;
 
+        }
+    
         if (Input.GetMouseButton(0))
         {
             speed += 0.1f;
+
+            //shotCount -= 1;
         }
+     if (attackable == true)
+        {
+
         if(Input.GetMouseButtonUp(0))
         {
             // 弾（ゲームオブジェクト）の生成
@@ -41,12 +75,15 @@ public class BallShooter : MonoBehaviour
             audioSource.PlayOneShot(sound1);
 
             speed = 0.0f;
+            shotCount -= 1;
         }
 
-
+    }
+    
         if (Input.GetKey("joystick button 7"))
         {
             speed += 0.1f;
+            shotCount -= 1;
         }
         if(Input.GetKeyUp("joystick button 7"))
         {
