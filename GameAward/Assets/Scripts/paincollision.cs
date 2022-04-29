@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class paincollision : MonoBehaviour
 {
+    public bool painted;
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("ink"))
+        if (collision.gameObject.CompareTag("ink") && !(painted))
         {
-            GetComponent<Collider2D>().isTrigger = false;
             collision.gameObject.SetActive(false);
-            Destroy(this.gameObject);
+            this.GetComponent<SpriteRenderer>().color += new Color(0, 0, 0, 100);
+            painted = true;
+            Clear.GoalNum += 1;
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        painted = false;
+        this.GetComponent<SpriteRenderer>().color += new Color(0, 0, 0, -100);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     float speed = 0;
     private float jumpForce = 700f;
 
-    private int jumpCount = 0;
+    public static int jumpCount;
 
     [SerializeField]
     private GameObject bullet;
@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         bWalkSound = false;
+        jumpCount = 0;
     }
 
     void Update()
@@ -84,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
                 bWalkSound = true;
             }
         }
-        if((Input.GetKeyDown("joystick button 1") && this.jumpCount < 0) || (Input.GetKeyDown(KeyCode.Space) && this.jumpCount < 0))
+        if((Input.GetKeyDown("joystick button 1") && jumpCount < 0) || (Input.GetKeyDown(KeyCode.Space) && jumpCount < 0))
         {
             this.rigidbody2D.AddForce(transform.up * jumpForce);
             jumpCount++;

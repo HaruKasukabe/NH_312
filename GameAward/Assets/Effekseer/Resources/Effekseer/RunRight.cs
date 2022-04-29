@@ -25,7 +25,8 @@ public class RunRight: MonoBehaviour
         }
         else if (x > 0)
         {
-            RunEffect.Play();
+            if(PlayerMovement.jumpCount < 0)
+                RunEffect.Play();
             if(!RunEffect.exists)
             {
                RunEffect.StopRoot();

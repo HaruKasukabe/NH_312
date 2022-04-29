@@ -8,6 +8,7 @@ TagManager:
   - cube
   - Floor
   - Goal
+  - goalAnim
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 572375027
     locked: 0

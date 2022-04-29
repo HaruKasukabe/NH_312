@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class playerAnimation : MonoBehaviour
 {
-    private Animator anim = null;
+    public static Animator playerAnim = null;
     private int jumpCount = 0;
+    bool lastKeyRight;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,23 +21,39 @@ public class playerAnimation : MonoBehaviour
 
         if (horizontalKey > 0)
         {
-            anim.SetBool("walkRight", true);
+            playerAnim.SetBool("walkRight", true);
+            lastKeyRight = true;
         }
         else if (horizontalKey < 0)
         {
-            anim.SetBool("walkLeft", true);
+            playerAnim.SetBool("walkLeft", true);
+            lastKeyRight = false;
         }
         else
         {
-            anim.SetBool("walkRight", false);
-            anim.SetBool("walkLeft", false);
+            playerAnim.SetBool("walkRight", false);
+            playerAnim.SetBool("walkLeft", false);
         }
 
         if((Input.GetKeyDown("joystick button 1") && this.jumpCount < 0) || (Input.GetKeyDown(KeyCode.Space) && this.jumpCount < 0))
         {
-            anim.SetTrigger("jump");
+            playerAnim.SetTrigger("jump");
             jumpCount++;
         }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            playerAnim.SetTrigger("shot");
+        }
+        if (Input.GetKeyUp("joystick button 7"))
+        {
+            playerAnim.SetTrigger("shot");
+        }
+
+        if (lastKeyRight)
+            playerAnim.SetBool("lastKeyRight", true);
+        else
+            playerAnim.SetBool("lastKeyRight", false);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
