@@ -22,7 +22,9 @@ public class GameManager : MonoBehaviour
 
     public void StartButton()
     {
+        FadeManager.Instance.LoadScene("SelectScene", 0.5f);
         SceneManager.LoadScene("SelectScene");
+      
     }
 
 }
