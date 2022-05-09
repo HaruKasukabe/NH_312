@@ -11,7 +11,9 @@ public class Clear : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+
         Goal = GameObject.FindWithTag("goalAnim");
+
         GoalNum = 0;
 
         Debug.Log("Name:" + Goal.name);
@@ -26,6 +28,14 @@ public class Clear : MonoBehaviour
             Goal.GetComponent<Animator>().SetBool("clear", true);
             playerAnimation.playerAnim.GetComponent<Animator>().SetTrigger("goal");
         }
+
+        if (GoalNum > 0)
+            ClearImage.gameObject.SetActive(true);
+    }
+
+    public void PainNumPlus()
+    {
+        GoalNum += 1;
     }
 
     public void PainNumPlus()

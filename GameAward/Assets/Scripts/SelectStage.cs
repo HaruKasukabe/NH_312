@@ -10,17 +10,28 @@ using UnityEngine.SceneManagement; //シーン遷移させるために必要
 
 public class SelectStage : MonoBehaviour
 {
-    /*
+    //スタートと終わりの目印
+    public Transform startMarker;
+    public Transform endMarker;
     private float speed = 1.0f;       //プレイヤーのスピード
+
+    //二点間の距離を入れる
+    private float distance_two;
 
     private SpriteRenderer renderer;  //プレイヤーを反転させるやつ
 
     void Start()
     {
-        renderer = GetComponent<SpriteRenderer>();
+       
     }
     void Update()
     {
+        // 現在の位置
+        float present_Location = (Time.time * speed) / distance_two;
+
+        // オブジェクトの移動
+        transform.position = Vector3.Lerp(startMarker.position, endMarker.position, present_Location);
+         
         Vector2 position = transform.position;
         float x = Input.GetAxis("Horizontal");
 
@@ -54,8 +65,10 @@ public class SelectStage : MonoBehaviour
         }
     }
 }
-*/
-    private Vector3 mouse;
+
+
+  /* //--------マウス操作移動↓--------
+   private Vector3 mouse;
     private Vector3 target;
 
     void Update()
@@ -65,4 +78,6 @@ public class SelectStage : MonoBehaviour
         //target.y = transform.position.y;
         this.transform.position = target;
     }
+    
 }
+*/
