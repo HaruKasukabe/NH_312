@@ -37,9 +37,4 @@ public class Clear : MonoBehaviour
     {
         GoalNum += 1;
     }
-
-    public void PainNumPlus()
-    {
-        GoalNum += 1;
-    }
 }

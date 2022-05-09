@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Fade : MonoBehaviour
+public class Fade2 : MonoBehaviour
 {
     public bool isFadeout = false;
     float speed = 0.02f;
