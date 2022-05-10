@@ -28,6 +28,7 @@ public class Fade : MonoBehaviour
 {
 	IFade fade;
     public bool StartFade;      //トランジション用変数
+    float cutoutRange;          //フェードアウト用    
 
     void Start ()
 	{
@@ -35,12 +36,11 @@ public class Fade : MonoBehaviour
         //シーン立ち上げ時にトランジションを掛けるか
         if (StartFade == true)
         {
-            cutoutRange = 1;
+            cutoutRange = 1;    //フェードアウトするときのために初期値を1にする
         }
+        //フェードの値に格納する
         fade.Range = cutoutRange;
     }
-
-	float cutoutRange;
 
 	void Init ()
 	{
