@@ -20,9 +20,10 @@ public class TitleOption : MonoBehaviour
     {
         
     }
-    public void StartButton()
+
+
+    public void OnClickStartButton()
     {
-        FadeManager.Instance.LoadScene("OptionScene", 0.5f);
-        SceneManager.LoadScene("OptionScene");
+       FadeManager.Instance.LoadScene("TitleScene", 0.5f);
     }
 }

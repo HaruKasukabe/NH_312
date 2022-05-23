@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1e837537b403b469669b007296c5e4, type: 3}
+  m_Name: Simple_Distortion
+  m_EditorClassIdentifier: 
+  efkBytes: "SKFE\r"
+  textureResources:
+  - path: Texture/LaserMain02.png
+    texture: {fileID: 2800000, guid: b86e7c25756a3ac428e8e11386906ceb, type: 3}
+  - path: Texture/Particle04_clear_hard.png
+    texture: {fileID: 2800000, guid: 0e206328230948949854e2e9a2565655, type: 3}
+  - path: Texture/Particle04_clear_soft.png
+    texture: {fileID: 2800000, guid: 3420a78f369637f4ab4cf4e54e756ede, type: 3}
+  - path: Texture/Cloud01.png
+    texture: {fileID: 2800000, guid: 9f0774668176d554a96b27ead30cd02e, type: 3}
+  soundResources: []
+  modelResources: []
+  Scale: 0.5

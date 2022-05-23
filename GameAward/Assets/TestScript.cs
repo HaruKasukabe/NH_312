@@ -5,15 +5,16 @@ using UnityEngine.UI;
 
 public class TestScript : MonoBehaviour
 {
-    //string[256] Select;
     public Button FirstSelectButton;
     void Start()
     {
-        FirstSelectButton.Select();
+       FirstSelectButton.Select();
     }
     
     void Update()
     {
-
+        Button MenuButton = GetComponent<Button>();    // ëŒè€ÇÃÉ{É^Éì
+        MenuButton.animator.SetTrigger("Highlighted");
+        
     }
 }
